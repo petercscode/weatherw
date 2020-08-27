@@ -44,7 +44,7 @@ Ez utóbbiakat tedd vendégcsalogató mondatokba! */
 
 let upperLimitOfTemperatures = [0, 15, 20, 25, 100];
 let offers = [
-  "Térjen be hozzánk egy finom forró csokira!",
+  "Holnap hétfő, meg hideg is van: igyál egy pálinkát!",
   "Ilyen hűvös időben a legjobb egy átmelegítő tea!",
   "Tízóraira egyen sütit!",
   "Fagyizzon nálunk!",
