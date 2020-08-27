@@ -70,3 +70,45 @@ function showOfferOfTheDay() {
 }
 
 //3. Jelenjen meg a heti minimum, maximum és átlag hőmérséklet: 3 külön függvény
+//Heti minimum
+document
+  .querySelector("#WeatherButton")
+  .addEventListener("click", showSmallestDegree);
+
+let smallestDegree = TemperaturesOfWeek[0]
+function showSmallestDegree(){
+for (let i=0; i<TemperaturesOfWeek.length; i++){
+  if (TemperaturesOfWeek[i]<smallestDegree){
+    smallestDegree=TemperaturesOfWeek[i];
+  }
+};
+document.querySelector("#minTemperature").innerHTML = smallestDegree + "&deg;C";
+};
+
+//Heti maximum
+document
+  .querySelector("#WeatherButton")
+  .addEventListener("click", showLargestDegree);
+
+let largestDegree = TemperaturesOfWeek[0]
+function showLargestDegree(){
+for (let i=0; i<TemperaturesOfWeek.length; i++){
+  if (TemperaturesOfWeek[i]>largestDegree){
+    largestDegree=TemperaturesOfWeek[i];
+  }
+};
+document.querySelector("#maxTemperature").innerHTML = largestDegree + "&deg;C";
+};
+
+//Heti átlag
+document
+  .querySelector("#WeatherButton")
+  .addEventListener("click", showAverageDegree);
+
+  function showAverageDegree(){
+    let sum = 0
+    for(let i=0; i<TemperaturesOfWeek.length; i++){
+      sum+=TemperaturesOfWeek[i];
+    }
+    document.querySelector("#avTemperature").innerHTML = sum/7 + "&deg;C";
+  };
