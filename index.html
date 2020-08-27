@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Időjárás widget</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist\css\bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+            <h2>Időjárás</h2>
+
+            <form action="">
+              <div class="form-group" id="DaysOfWeekDiv">
+                <select class="form-control" name="DaysOfWeek" id="DaysOfWeek">
+                  <option selected>Válassz...</option>
+                  <option value="0">Hétfő</option>
+                  <option value="1">Kedd</option>
+                  <option value="2">Szerda</option>
+                  <option value="3">Csütörtök</option>
+                  <option value="4">Péntek</option>
+                  <option value="5">Szombat</option>
+                  <option value="6">Vasárnap</option>
+                </select>
+
+                <button
+                  type="button"
+                  class="form-control btn btn-primary"
+                  id="WeatherButton"
+                  onclick="getTemperatures()"
+                >
+                  Mutasd
+                </button>
+
+                <div>
+                  Ennyi fok lesz:
+                  <span id="Temperature"></span>
+                </div>
+
+                <div>
+                  Napi ajánlatunk:
+                  <span id="offerOfTheDay"></span>
+                </div>
+              </form>
+
+                <div>Heti minimum: 
+                 <span id="
+                    minTemperature"
+                  ></span>
+                </div>
+
+                <div>
+                  Heti maximum:
+                  <span id="maxTemperature"></span>
+                </div>
+
+        <div>Heti átlag: 
+          <span id="avTemperature"></span>
+                </div>
+              </div>
+            </form>
+
+            <div class="col-12 col-md-6 col-lg-3"></div>
+
+            <div class="col-12 col-md-6 col-lg-3"></div>
+          </div>
+        </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
