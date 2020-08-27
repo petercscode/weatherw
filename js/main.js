@@ -46,8 +46,8 @@ let upperLimitOfTemperatures = [0, 15, 20, 25, 100];
 let offers = [
   "Holnap hétfő, meg hideg is van: igyál egy pálinkát!",
   "Ilyen hűvös időben a legjobb egy átmelegítő tea!",
-  "Tízóraira egyen sütit!",
-  "Fagyizzon nálunk!",
+  "Egyél palacsintát, 16 fokban nincs annál jobb!",
+  "Fagyizz nálunk, de a pisztácia elfogyott!",
   "Ajánljuk különleges limonádéinkat sok jéggel!",
 ];
 
